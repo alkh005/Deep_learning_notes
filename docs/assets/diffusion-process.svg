@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" role="img" aria-labelledby="title desc">
+  <title id="title">Diffusion adds noise, then learns to remove it</title>
+  <desc id="desc">A clean simple image becomes progressively noisy in the forward process. A trained model reverses the steps to create a clean generated image from noise.</desc>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+  <rect width="1000" height="350" rx="22" fill="#f8fafc"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#0f172a">
+    <text x="500" y="40" font-size="20" font-weight="bold">Training teaches the model to undo gradual noise</text>
+    <g><rect x="55" y="85" width="145" height="145" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><circle cx="127" cy="155" r="38" fill="#f59e0b"/><path d="M95 173Q127 135 159 173" fill="none" stroke="#b45309" stroke-width="6"/><text x="127" y="258" font-size="15" font-weight="bold">Clean image</text></g>
+    <g><rect x="285" y="85" width="145" height="145" rx="16" fill="#e0e7ff" stroke="#6366f1" stroke-width="2"/><circle cx="357" cy="155" r="38" fill="#fbbf24" opacity=".62"/><path d="M325 173Q357 135 389 173" fill="none" stroke="#c2410c" stroke-width="6" opacity=".55"/><g fill="#64748b"><circle cx="310" cy="112" r="3"/><circle cx="404" cy="120" r="4"/><circle cx="340" cy="201" r="3"/><circle cx="390" cy="190" r="3"/><circle cx="335" cy="135" r="2"/><circle cx="375" cy="105" r="3"/></g><text x="357" y="258" font-size="15" font-weight="bold">A little noise</text></g>
+    <g><rect x="515" y="85" width="145" height="145" rx="16" fill="#cbd5e1" stroke="#64748b" stroke-width="2"/><g fill="#64748b"><circle cx="540" cy="110" r="9"/><circle cx="590" cy="125" r="14"/><circle cx="630" cy="103" r="11"/><circle cx="540" cy="165" r="13"/><circle cx="610" cy="170" r="11"/><circle cx="565" cy="205" r="10"/><circle cx="640" cy="210" r="12"/><circle cx="575" cy="95" r="7"/><circle cx="545" cy="205" r="6"/><circle cx="630" cy="145" r="8"/></g><text x="587" y="258" font-size="15" font-weight="bold">Mostly noise</text></g>
+    <g><rect x="745" y="85" width="145" height="145" rx="16" fill="#e2e8f0" stroke="#0f766e" stroke-width="2"/><g fill="#94a3b8" opacity=".7"><circle cx="770" cy="112" r="7"/><circle cx="850" cy="203" r="8"/><circle cx="866" cy="130" r="7"/><circle cx="785" cy="200" r="6"/></g><circle cx="817" cy="155" r="36" fill="#f59e0b"/><path d="M787 172Q817 136 847 172" fill="none" stroke="#b45309" stroke-width="6"/><text x="817" y="258" font-size="15" font-weight="bold">Reconstructed sample</text></g>
+    <text x="365" y="315" font-size="14" fill="#475569">Forward noise process (training)</text><text x="790" y="315" font-size="14" fill="#0f766e">← learned denoising steps (generation)</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"><path d="M205 155H275M435 155H505M665 155H735"/></g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" role="img" aria-labelledby="title desc">
+  <title id="title">Flow matching moves noise smoothly toward a data sample</title>
+  <desc id="desc">A curved path with arrows moves a point from a cloud of random noise at time zero to a generated sample at time one.</desc>
+  <defs><marker id="arr" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto"><path d="M0 0L12 6L0 12z" fill="#4f46e5"/></marker></defs>
+  <rect width="1000" height="400" rx="22" fill="#f8fafc"/>
+  <g font-family="Arial,sans-serif" fill="#0f172a" text-anchor="middle">
+    <text x="500" y="42" font-size="21" font-weight="bold">Learn a smooth route from noise to a generated example</text>
+    <rect x="50" y="95" width="205" height="200" rx="18" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/><text x="152" y="126" font-size="18" font-weight="bold">Start: random noise</text>
+    <g fill="#7c3aed" opacity=".8"><circle cx="105" cy="170" r="7"/><circle cx="165" cy="165" r="5"/><circle cx="210" cy="188" r="8"/><circle cx="132" cy="218" r="9"/><circle cx="192" cy="240" r="6"/><circle cx="90" cy="260" r="5"/><circle cx="225" cy="275" r="4"/><circle cx="165" cy="275" r="6"/><circle cx="75" cy="200" r="4"/></g>
+    <rect x="745" y="95" width="205" height="200" rx="18" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="847" y="126" font-size="18" font-weight="bold">Finish: sample</text><circle cx="847" cy="205" r="48" fill="#f59e0b"/><path d="M808 225Q847 175 886 225" fill="none" stroke="#b45309" stroke-width="7"/>
+    <text x="500" y="360" font-size="16" fill="#475569">At each moment t, the model predicts which way each point should move.</text>
+    <text x="150" y="320" font-size="15" fill="#6d28d9">t = 0</text><text x="850" y="320" font-size="15" fill="#15803d">t = 1</text>
+  </g>
+  <path d="M250 235C340 80 390 325 505 215S660 115 750 205" fill="none" stroke="#4f46e5" stroke-width="5" stroke-linecap="round" marker-end="url(#arr)"/>
+  <g fill="#4f46e5"><circle cx="350" cy="178" r="7"/><circle cx="485" cy="229" r="7"/><circle cx="630" cy="147" r="7"/></g>
+  <g stroke="#0891b2" stroke-width="3" marker-end="url(#arr)"><path d="M350 178L380 146M485 229L515 196M630 147L664 155"/></g>
+  <text x="500" y="90" font-family="Arial,sans-serif" font-size="15" fill="#4338ca" text-anchor="middle">Learned flow field: local arrows point along the path</text>
+</svg>

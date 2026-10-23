@@ -1,0 +1,37 @@
+site_name: Deep Learning Notes
+site_description: Simple, student-friendly notes for learning deep learning.
+docs_dir: docs
+site_dir: site
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: cyan
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+nav:
+  - Start here: index.md
+  - Foundations:
+      - AI, machine learning, and deep learning: foundations/01-ai-ml-deep-learning.md
+      - Neurons, layers, and activation functions: foundations/02-neurons-layers-activations.md
+      - MLPs, forward propagation, and backpropagation: foundations/03-mlp-forward-backprop.md
+      - Optimization and loss functions: foundations/04-optimization-losses.md
+      - Generalization and evaluation: foundations/05-generalization-evaluation.md
+  - More deep learning:
+      - Convolutional neural networks: deep-learning/cnn.md
+      - Transformers and attention: deep-learning/transformers.md
+      - Diffusion models: deep-learning/diffusion.md
+      - Flow matching: deep-learning/flow-matching.md
+  - Glossary: glossary.md

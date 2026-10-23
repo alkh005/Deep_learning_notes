@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420" role="img" aria-labelledby="title desc">
+  <title id="title">Query, key, and value attention diagram</title>
+  <desc id="desc">A query from one token is compared with keys from all tokens to create attention weights. Those weights blend the corresponding values into a context output.</desc>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
+  <rect width="1000" height="420" rx="22" fill="#f8fafc"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#0f172a">
+    <text x="500" y="42" font-size="21" font-weight="bold">Each token creates a Query (Q), Key (K), and Value (V)</text>
+    <g><rect x="75" y="82" width="150" height="82" rx="15" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="150" y="114" font-size="17" font-weight="bold">Token: “cats”</text><text x="150" y="143" font-size="17">Q₁ · K₁ · V₁</text></g>
+    <g><rect x="285" y="82" width="150" height="82" rx="15" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/><text x="360" y="114" font-size="17" font-weight="bold">Token: “chase”</text><text x="360" y="143" font-size="17">Q₂ · K₂ · V₂</text></g>
+    <g><rect x="495" y="82" width="150" height="82" rx="15" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="570" y="114" font-size="17" font-weight="bold">Token: “mice”</text><text x="570" y="143" font-size="17">Q₃ · K₃ · V₃</text></g>
+    <g><rect x="755" y="100" width="175" height="60" rx="14" fill="#cffafe" stroke="#0891b2" stroke-width="2"/><text x="842" y="125" font-size="16" font-weight="bold">Query · Keys</text><text x="842" y="147" font-size="14">compare for relevance</text></g>
+    <rect x="90" y="222" width="270" height="105" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="225" y="253" font-size="17" font-weight="bold">Attention weights</text><text x="225" y="282" font-size="15">0.1 × V₁  +  0.7 × V₂</text><text x="225" y="307" font-size="15">+  0.2 × V₃</text>
+    <rect x="455" y="222" width="205" height="105" rx="16" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text x="557" y="258" font-size="17" font-weight="bold">Blend Values</text><text x="557" y="286" font-size="15">weighted sum of V's</text><text x="557" y="308" font-size="14">most relevant count more</text>
+    <rect x="755" y="222" width="175" height="105" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="842" y="261" font-size="17" font-weight="bold">Context output</text><text x="842" y="290" font-size="15">new representation</text>
+    <text x="500" y="383" font-size="16" fill="#475569">A query asks “what am I looking for?” · a key says “what do I contain?” · a value is the information shared.</text>
+  </g>
+  <g stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arr)"><path d="M225 164C235 195 330 190 360 222M435 164C420 190 280 190 260 222M645 150C700 175 720 190 780 220M360 275H447M660 275H747"/></g>
+</svg>

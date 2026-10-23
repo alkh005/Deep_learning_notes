@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" role="img" aria-labelledby="title desc">
+  <title id="title">A convolution filter moving across an image patch</title>
+  <desc id="desc">A 3 by 3 filter reads a highlighted patch of a larger grid, multiplies and adds the values, and writes one value into a feature map.</desc>
+  <rect width="1000" height="430" rx="22" fill="#f8fafc"/>
+  <g font-family="Arial,sans-serif" fill="#0f172a" text-anchor="middle">
+    <text x="220" y="48" font-size="20" font-weight="bold">Image pixels</text><text x="500" y="48" font-size="20" font-weight="bold">3 × 3 filter</text><text x="790" y="48" font-size="20" font-weight="bold">Feature map</text>
+    <g transform="translate(83 85)">
+      <rect width="280" height="280" rx="8" fill="#fff" stroke="#64748b" stroke-width="2"/>
+      <path d="M56 0V280M112 0V280M168 0V280M224 0V280M0 56H280M0 112H280M0 168H280M0 224H280" stroke="#94a3b8" stroke-width="1.5"/>
+      <rect x="56" y="56" width="168" height="168" fill="#c4b5fd" fill-opacity=".55" stroke="#7c3aed" stroke-width="4"/>
+      <g font-size="17" fill="#334155"><text x="28" y="36">1</text><text x="84" y="36">0</text><text x="140" y="36">2</text><text x="196" y="36">1</text><text x="252" y="36">0</text>
+      <text x="28" y="92">0</text><text x="84" y="92">2</text><text x="140" y="92">1</text><text x="196" y="92">0</text><text x="252" y="92">1</text>
+      <text x="28" y="148">1</text><text x="84" y="148">1</text><text x="140" y="148">3</text><text x="196" y="148">2</text><text x="252" y="148">0</text>
+      <text x="28" y="204">0</text><text x="84" y="204">2</text><text x="140" y="204">1</text><text x="196" y="204">1</text><text x="252" y="204">2</text>
+      <text x="28" y="260">1</text><text x="84" y="260">0</text><text x="140" y="260">0</text><text x="196" y="260">1</text><text x="252" y="260">2</text></g>
+    </g>
+    <g transform="translate(410 125)"><rect width="180" height="180" rx="8" fill="#fff" stroke="#0891b2" stroke-width="3"/><path d="M60 0V180M120 0V180M0 60H180M0 120H180" stroke="#67e8f9" stroke-width="2"/><g font-size="26"><text x="30" y="40">1</text><text x="90" y="40">0</text><text x="150" y="40">−1</text><text x="30" y="100">1</text><text x="90" y="100">0</text><text x="150" y="100">−1</text><text x="30" y="160">1</text><text x="90" y="160">0</text><text x="150" y="160">−1</text></g></g>
+    <g transform="translate(705 125)"><rect width="180" height="180" rx="8" fill="#fff" stroke="#16a34a" stroke-width="3"/><path d="M60 0V180M120 0V180M0 60H180M0 120H180" stroke="#86efac" stroke-width="2"/><rect x="0" y="0" width="60" height="60" fill="#bbf7d0"/><text x="30" y="40" font-size="22">5</text><text x="90" y="40" font-size="22">…</text><text x="150" y="40" font-size="22">…</text><text x="90" y="100" font-size="22">…</text><text x="90" y="160" font-size="22">…</text></g>
+    <text x="500" y="352" font-size="16" fill="#475569">Multiply matching cells, add the results, then slide the filter to the next patch.</text>
+    <text x="500" y="389" font-size="16" font-weight="bold" fill="#334155">The filter detects a pattern; each output cell records how strongly it appeared.</text>
+  </g>
+  <g stroke="#475569" stroke-width="2.5" marker-end="url(#arr)"><path d="M370 220H400M600 220H690"/></g>
+  <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker></defs>
+</svg>

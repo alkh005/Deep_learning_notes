@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 330" role="img" aria-labelledby="title desc">
+  <title id="title">Forward pass and backpropagation steps</title>
+  <desc id="desc">Inputs travel left to right through the network to a prediction and loss. Gradients travel back from the loss to update the network.</desc>
+  <defs><marker id="f" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4f46e5"/></marker><marker id="b" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#ea580c"/></marker></defs>
+  <rect width="1000" height="330" rx="22" fill="#f8fafc"/>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#0f172a">
+    <g><rect x="35" y="112" width="145" height="76" rx="16" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="107" y="145" font-size="18" font-weight="bold">1. Input</text><text x="107" y="169" font-size="14">example data</text></g>
+    <g><rect x="225" y="112" width="170" height="76" rx="16" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/><text x="310" y="145" font-size="18" font-weight="bold">2. Network</text><text x="310" y="169" font-size="14">layers make a guess</text></g>
+    <g><rect x="440" y="112" width="145" height="76" rx="16" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/><text x="512" y="145" font-size="18" font-weight="bold">3. Prediction</text><text x="512" y="169" font-size="14">model output</text></g>
+    <g><rect x="635" y="112" width="145" height="76" rx="16" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="707" y="145" font-size="18" font-weight="bold">4. Loss</text><text x="707" y="169" font-size="14">compare with answer</text></g>
+    <g><rect x="830" y="112" width="135" height="76" rx="16" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/><text x="897" y="145" font-size="18" font-weight="bold">5. Update</text><text x="897" y="169" font-size="14">optimizer changes weights</text></g>
+  </g>
+  <g stroke="#4f46e5" stroke-width="3" marker-end="url(#f)"><path d="M180 150H218M395 150H433M585 150H628M780 150H823"/></g>
+  <path d="M897 203V258H310V203" fill="none" stroke="#ea580c" stroke-width="3" marker-end="url(#b)"/>
+  <text x="600" y="250" font-family="Arial,sans-serif" font-size="17" fill="#c2410c" font-weight="bold">Backpropagation: gradients carry error information backward</text>
+  <text x="490" y="72" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#4338ca" font-weight="bold">FORWARD PASS →</text>
+</svg>
